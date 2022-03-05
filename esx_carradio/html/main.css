@@ -19,20 +19,20 @@
     margin-left: 74px;
     margin-top: 39px;
     opacity: 1;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #shutdownbutton {
-    background: transparent;
-    border: none !important;
-    position: absolute;
-    z-index: 97;
-    width: 15px;
-    height: 15px;
-    opacity: 0.65;
-    margin-top: 87px;
-    margin-left: 50px;
-    border-radius: 50%;
+  background: #b10000;
+  border: none !important;
+  position: absolute;
+  z-index: 97;
+  width: 15px;
+  height: 15px;
+  opacity: 0.65;
+  margin-top: 409px;
+  margin-left: 5px;
+  border-radius: 50%;
 }
 
 #shutdownbutton:focus {
@@ -48,11 +48,11 @@
     z-index: 97;
     width: 15px;
     height: 15px;
-    background: transparent;
+    background: rgb(89 89 89);
     border: none !important;
     opacity: 0.65;
-    margin-top: 228px;
-    margin-left: 50px;
+    margin-top: 419px;
+    margin-left: 677px;
     border-radius: 50%;
 }
 
@@ -65,16 +65,16 @@
 }
 
 #volumedown {
-    position: absolute;
-    z-index: 97;
-    width: 15px;
-    height: 15px;
-    background: transparent;
-    border: none !important;
-    opacity: 0.65;
-    margin-top: 295px;
-    margin-left: 50px;
-    border-radius: 50%;
+  position: absolute;
+  z-index: 97;
+  width: 15px;
+  height: 15px;
+  background: rgb(89 89 89);
+  border: none !important;
+  opacity: 0.65;
+  margin-top: 419px;
+  margin-left: 719px;
+  border-radius: 50%;
 }
 
 #volumedown:focus {
@@ -89,12 +89,13 @@
     font-size: 40;
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: rgba(255,255,255,0.0);
     margin-top: 10px;
 }
 
-
+/* caixa do link */
 #linkinput {
+    font-weight: 900;
     width: 530px;
     height: 35px;
     outline: none;
@@ -102,17 +103,20 @@
     border-radius: 15px;
 	padding-left : 15px;
     padding-right: 15px;
+    margin-top: 96px;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
+    background-color: rgb(53, 53, 53);
+    color: white;
 }
-
+/* botao buscar */
 #inputok {
     width: 100px;
     height: 35px;
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(53, 53, 53);
     outline: none;
     border: none;
     text-align: center;
@@ -120,31 +124,27 @@
 	letter-spacing: 2px;
 	font-family: Roboto;
 	font-size: 15;
+    transition: all 0.5s;
 }
 
 #inputrec {
     margin: 0 auto;
     width: 650px;
-    height: 35px;
-    margin-top: 10px;
+    height: 40px;
+    margin-top: -30px;
 }
 
 #inputok:hover {
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(89, 89, 89);
 }
 
 
-/* #bttrec {
-    position: relative;
-    margin: 0 auto;
-    width: 500px;
-    height: 75px;
-    margin-top: 60px;
-} */
 
 #bttrec {
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    top: 82%;
+    left: 50%;
     width: 288px;
     height: 90px;
     margin-top: 10px;
@@ -153,12 +153,27 @@
     grid-gap: 20px 10px;
 }
 
-#inputtitle {}
+#downrec {
+    position: relative;
+    margin: 0 auto;
+    top: 57%;
+    left:19%;
+    margin-top: 10px;
+    width: 160px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-gap: 20px 40px;
+}
 
+
+
+#inputtitle {}
+/* tamanho das img em svg */
 .fw {
     width: 100%;
     height: 100%;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 .white {
@@ -166,53 +181,46 @@
 }
 
 .fw:hover {
-	opacity: 0.5;
+    background-color: #b10000;
+	opacity: 1;
+    border-radius: 50%;
 }
-
+/* background das img */
 .bttn {
+    width: 25%;
+    height: 25%;
     border-radius: 50%;
     background-color: white;
 }
-
-#downrec {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 160px;
-    height: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 60px);
-    grid-gap: 20px 40px;
-}
-
+/* Se quiser exibir a hora em narnia só mudar a opacidade da fonte */
 .clock {
 	font-size: 20;
 	text-align: left;
-    color: white;
+    color: rgba(255,255,255,0.0);
     font-family: Roboto;
 	letter-spacing: 2px;
 	margin-top: -38px;
 	margin-left: 30px;
 }
-
+/* volume */
 #testrecv {
-	font-size: 15;
-    color: white;
+  font-size: 15;
+    color: rgb(53 53 53);
     margin-top: -35px;
-	margin-right: 30px;
+    margin-right: 30px;
     text-align: right;
-	font-family: Roboto;
-	letter-spacing: 2px;
+    font-family: Roboto;
+    letter-spacing: 2px;
 }
-
+/* looping */
 #testrecl {
-	font-size: 15;
-    color: white;
-    margin-top: 10px;
-	margin-right: 30px;
-    text-align: right;
-	font-family: Roboto;
-	letter-spacing: 1px;
+  font-size: 15;
+  color: rgb(53 53 53);
+  margin-top: 10px;
+  margin-right: 30px;
+  text-align: right;
+  font-family: Roboto;
+  letter-spacing: 1px;
 }
 
 hr.new2 {
@@ -220,20 +228,24 @@ hr.new2 {
   border-bottom: 5px solid rgb(0, 102, 255);
   opacity: 0.4;
 }
-
+/* Tocando agora */
 #testrec {
     color: white;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 140px;
+    margin-left:-50px;
     text-align: center;
 	max-width: 300px;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	font-family: Roboto;
+    font-size: 10px;
 }
+/* Tempo da track */
 #testtime {
-    color: white;
+    color:#b10000;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: -30px;
+    margin-left:650px;
     text-align: center;
 	max-width: 300px;
 	letter-spacing: 1px;
